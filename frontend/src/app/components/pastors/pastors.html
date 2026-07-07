@@ -1,0 +1,26 @@
+<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
+  <table class="table">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0</th>
+            <td>Test</td>
+            <td>Test.com</td>
+        </tr>
+        @for(pastor of pastor; track pastor.id){
+            <tr>
+                <th>{{pastor.id}}</th>
+                <td>{{pastor.name}}</td>
+                <td>{{pastor.email}}</td>
+            </tr>
+        }
+    </tbody>
+  </table>
+</div>
